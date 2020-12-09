@@ -1,0 +1,235 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="DormitoryManagement.front.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <link href="res/js/mastertask/table.css" rel="stylesheet">
+        <!-- favicon
+        ============================================ -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="http://demo2.cssmoban.com/cssthemes6/cob_7_nalika/img/favicon.ico"> -->
+    <!-- Google Fonts
+        ============================================ -->
+    <link href="res/js/mastertask/css" rel="stylesheet">
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/bootstrap.min.css">
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/font-awesome.min.css">
+    <!-- nalika Icon CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/nalika-icon.css">
+    <!-- owl.carousel CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/owl.carousel.css">
+    <link rel="stylesheet" href="res/js/mastertask/owl.theme.css">
+    <link rel="stylesheet" href="res/js/mastertask/owl.transitions.css">
+    <!-- animate CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/animate.css">
+    <!-- normalize CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/normalize.css">
+    <!-- meanmenu icon CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/meanmenu.min.css">
+    <!-- main CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/main.css">
+    <!-- morrisjs CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/morris.css">
+    <!-- mCustomScrollbar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/metisMenu.min.css">
+    <link rel="stylesheet" href="res/js/mastertask/metisMenu-vertical.css">
+    <!-- calendar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/fullcalendar.min.css">
+    <link rel="stylesheet" href="res/js/mastertask/fullcalendar.print.min.css">
+    <!-- style CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/style.css">
+    <!-- responsive CSS
+        ============================================ -->
+    <link rel="stylesheet" href="res/js/mastertask/responsive.css">
+    <!-- modernizr JS
+        ============================================ -->
+    <script type="text/javascript" src="res/js/mastertask/modernizr-2.8.3.min.js"></script>
+    <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>
+
+
+</head>
+<body>
+            <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="#"><img class="main-logo" src="res/js/mastertask/logosn.png" alt=""></a>
+                <strong><img src="res/js/mastertask/logosn.png" alt=""></strong>
+            </div>
+            <div class="nalika-profile">
+                <div class="profile-dtl">
+                    <a href="#"><img src="res/js/mastertask/4.jpg" alt=""></a>
+                    <h2>杨 <span class="min-dtn">志恒</span></h2>
+                </div>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar mCustomScrollbar _mCS_1 mCS-autoHide" style="position: relative; overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-light-1 mCSB_vertical mCSB_outside" tabindex="0" style="max-height: none;"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li class="active">
+                            <a class="has-arrow" href="#">
+                                   <i class="icon nalika-home icon-wrap"></i>
+                                   <span class="mini-click-non">学生管理</span>
+                                </a>
+                            <ul class="submenu-angle collapse in" aria-expanded="true">
+                                <li><a title="Dashboard v.1" href="#"><span class="mini-sub-pro">健康上报记录查看</span></a></li>
+                                <li><a title="Dashboard v.2" href="#"><span class="mini-sub-pro">健康上报</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">来访管理</span></a>
+                            <ul class="submenu-angle collapse" aria-expanded="false">
+                                <li><a title="Inbox" href="#"><span class="mini-sub-pro">来访申请查看</span></a></li>
+                                <li><a title="View Mail" href="#"><span class="mini-sub-pro">View Mail</span></a></li>
+                                <li><a title="Compose Mail" href="#"><span class="mini-sub-pro">Compose Mail</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-diamond icon-wrap"></i> <span class="mini-click-non">通知公告管理</span></a>
+                            <ul class="submenu-angle collapse" aria-expanded="false">
+                                <li><a title="Google Map" href="#"><span class="mini-sub-pro">历史公告</span></a></li>
+                                <li><a title="Data Maps" href="#"><span class="mini-sub-pro">近期公告</span></a></li>
+                                <li><a title="Pdf Viewer" href="#"><span class="mini-sub-pro">发布公告</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-pie-chart icon-wrap"></i> <span class="mini-click-non">用户管理</span></a>
+                            <ul class="submenu-angle collapse" aria-expanded="false">
+                                <li><a title="File Manager" href="#"><span class="mini-sub-pro">用户管理</span></a></li>
+                                <li><a title="Blog" href="#"><span class="mini-sub-pro">权限分配</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-bar-chart icon-wrap"></i> <span class="mini-click-non">个人</span></a>
+                            <ul class="submenu-angle collapse" aria-expanded="false">
+                                <li><a title="Bar Charts" href="#"><span class="mini-sub-pro">个人信息管理</span></a></li>
+                                <li><a title="Line Charts" href="#"><span class="mini-sub-pro">修改密码</span></a></li>
+                                <li><a title="Line Charts" href="#"><span class="mini-sub-pro">退出</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light-1 mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 344px; max-height: 570px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+        </nav>
+    </div>
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                                    <i class="icon nalika-menu-task"></i>
+                                                </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                        <div class="header-top-menu tabl-d-n hd-search-rp">
+                                            <div class="breadcome-heading">
+                                                <form role="search" class="">
+                                                    <input type="text" placeholder="Search..." class="form-control">
+                                                    <a href=""><i class="fa fa-search"></i></a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!-- jquery
+        ============================================ -->
+    <script src="res/js/mastertask/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+        ============================================ -->
+    <script src="res/js/mastertask/bootstrap.min.js"></script>
+    <!-- wow JS
+        ============================================ -->
+    <script src="res/js/mastertask/wow.min.js"></script>
+    <!-- price-slider JS
+        ============================================ -->
+    <script src="res/js/mastertask/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+        ============================================ -->
+    <script src="res/js/mastertask/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+        ============================================ -->
+    <script src="res/js/mastertask/owl.carousel.min.js"></script>
+    <!-- sticky JS
+        ============================================ -->
+    <script src="res/js/mastertask/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+        ============================================ -->
+    <script src="res/js/mastertask/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+        ============================================ -->
+    <script src="res/js/mastertask/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="res/js/mastertask/mCustomScrollbar-active.js"></script>
+<!--     metisMenu JS
+        ============================================
+ -->
+    <script src="res/js/mastertask/metisMenu.min.js"></script>
+    <script src="res/js/mastertask/metisMenu-active.js"></script>
+    <!-- morrisjs JS
+        ============================================ -->
+<!--     <script src="res/js/mastertask/jquery.sparkline.min.js"></script>
+    <script src="res/js/mastertask/jquery.charts-sparkline.js"></script> -->
+    <!-- calendar JS
+        ============================================ -->
+
+    <div class="flot-tooltip" style="display: none;"></div><div class="flot-tooltip" style="display: none;"></div><div class="flot-tooltip" style="display: none;"></div>
+    <!-- plugins JS
+        ============================================ -->
+    <script src="res/js/mastertask/plugins.js"></script>
+    <!-- main JS
+        ============================================ -->
+    <script type="text/javascript">
+
+    </script>
+
+
+    <script src="res/js/mastertask/main.js"></script><a id="scrollUp" href="http://demo2.cssmoban.com/cssthemes6/cob_7_nalika/index-2.html#top" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+
+
+</body>
+</html>

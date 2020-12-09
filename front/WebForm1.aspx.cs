@@ -32,6 +32,7 @@ namespace DormitoryManagement.front
             }
         }
 
+
         private void bind_gridview()
         {
             try

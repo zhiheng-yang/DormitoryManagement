@@ -112,9 +112,110 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="front\WebForm1.aspx" />
+    <Content Include="res\css\css.css" />
+    <Content Include="res\css\demo.css" />
+    <Content Include="res\css\index.vsb.css" />
+    <Content Include="res\css\jquery.jslides.css" />
+    <Content Include="res\css\_sitegray_d.css" />
+    <Content Include="res\img\bkzs111.jpg" />
+    <Content Include="res\img\home.png" />
+    <Content Include="res\img\jdyw.gif" />
+    <Content Include="res\img\jjjc11.jpg" />
+    <Content Include="res\img\kjtd.png" />
+    <Content Include="res\img\kjyq.jpg" />
+    <Content Include="res\img\logo.gif" />
+    <Content Include="res\img\mtjd.png" />
+    <Content Include="res\img\tzgg.jpg" />
+    <Content Include="res\img\xswh.png" />
+    <Content Include="res\img\xx_di_logo1.png" />
+    <Content Include="res\img\z1.gif" />
+    <Content Include="res\img\z10.jpg" />
+    <Content Include="res\img\z2.gif" />
+    <Content Include="res\img\z5.gif" />
+    <Content Include="res\img\z6.gif" />
+    <Content Include="res\img\z7.gif" />
+    <Content Include="res\img\z8.gif" />
+    <Content Include="res\img\ztlj.png" />
+    <Content Include="res\img\新建文本文档.txt" />
+    <Content Include="res\js\index_data\default.css" />
+    <Content Include="res\js\index_data\demo.css" />
+    <Content Include="res\js\index_data\Detector.js" />
+    <Content Include="res\js\index_data\jquery-ui.js" />
+    <Content Include="res\js\index_data\jquery.js" />
+    <Content Include="res\js\index_data\jquery_002.js" />
+    <Content Include="res\js\index_data\key.png" />
+    <Content Include="res\js\index_data\layui.css" />
+    <Content Include="res\js\index_data\layui.js" />
+    <Content Include="res\js\index_data\loaders.css" />
+    <Content Include="res\js\index_data\lock_icon_copy.png" />
+    <Content Include="res\js\index_data\Particleground.js" />
+    <Content Include="res\js\index_data\RequestAnimationFrame.js" />
+    <Content Include="res\js\index_data\stopExecutionOnTimeout.js" />
+    <Content Include="res\js\index_data\styles.css" />
+    <Content Include="res\js\index_data\ThreeExtras.js" />
+    <Content Include="res\js\index_data\ThreeWebGL.js" />
+    <Content Include="res\js\index_data\tick.png" />
+    <Content Include="res\js\index_data\Treatment.html" />
+    <Content Include="res\js\index_data\user_icon_copy.png" />
+    <Content Include="res\js\mastertask\1.jpg" />
+    <Content Include="res\js\mastertask\2.jpg" />
+    <Content Include="res\js\mastertask\3.jpg" />
+    <Content Include="res\js\mastertask\4%281%29.jpg" />
+    <Content Include="res\js\mastertask\4.jpg" />
+    <Content Include="res\js\mastertask\42.jpg" />
+    <Content Include="res\js\mastertask\5.jpg" />
+    <Content Include="res\js\mastertask\5.png" />
+    <Content Include="res\js\mastertask\62.jpg" />
+    <Content Include="res\js\mastertask\animate.css" />
+    <Content Include="res\js\mastertask\bootstrap.min.css" />
+    <Content Include="res\js\mastertask\core.php" />
+    <Content Include="res\js\mastertask\dmaku.min.css" />
+    <Content Include="res\js\mastertask\font-awesome.min.css" />
+    <Content Include="res\js\mastertask\fullcalendar.min.css" />
+    <Content Include="res\js\mastertask\fullcalendar.print.min.css" />
+    <Content Include="res\js\mastertask\icon-tip1.png" />
+    <Content Include="res\js\mastertask\index.html" />
+    <Content Include="res\js\mastertask\jquery.mCustomScrollbar.min.css" />
+    <Content Include="res\js\mastertask\login.css" />
+    <Content Include="res\js\mastertask\logo.png" />
+    <Content Include="res\js\mastertask\logosn.png" />
+    <Content Include="res\js\mastertask\main.css" />
+    <Content Include="res\js\mastertask\meanmenu.min.css" />
+    <Content Include="res\js\mastertask\metisMenu-active.js" />
+    <Content Include="res\js\mastertask\metisMenu-vertical.css" />
+    <Content Include="res\js\mastertask\metisMenu.min.css" />
+    <Content Include="res\js\mastertask\metisMenu.min.js" />
+    <Content Include="res\js\mastertask\modernizr-2.8.3.min.js" />
+    <Content Include="res\js\mastertask\modernizr.js" />
+    <Content Include="res\js\mastertask\moment.min.js" />
+    <Content Include="res\js\mastertask\morris.css" />
+    <Content Include="res\js\mastertask\nalika-icon.css" />
+    <Content Include="res\js\mastertask\normalize.css" />
+    <Content Include="res\js\mastertask\owl.carousel.css" />
+    <Content Include="res\js\mastertask\owl.carousel.min.js" />
+    <Content Include="res\js\mastertask\owl.theme.css" />
+    <Content Include="res\js\mastertask\owl.transitions.css" />
+    <Content Include="res\js\mastertask\plugins.js" />
+    <Content Include="res\js\mastertask\quick-login.js" />
+    <Content Include="res\js\mastertask\responsive.css" />
+    <Content Include="res\js\mastertask\saved_resource.html" />
+    <Content Include="res\js\mastertask\style.css" />
+    <Content Include="res\js\mastertask\table.css" />
+    <Content Include="res\js\mastertask\test.html" />
+    <Content Include="res\js\mastertask\tj.js" />
+    <Content Include="res\js\mastertask\wow.min.js" />
+    <Content Include="res\js\mastertask\z_stat.php" />
     <Content Include="Web.config" />
+    <Content Include="homepage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="front\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -123,9 +224,41 @@
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
+    <Content Include="res\js\mastertask\bootstrap.min.js.下载" />
+    <Content Include="res\js\mastertask\cookie.js.下载" />
+    <Content Include="res\js\mastertask\css" />
+    <Content Include="res\js\mastertask\curvedLines.js.下载" />
+    <Content Include="res\js\mastertask\flot-active.js.下载" />
+    <Content Include="res\js\mastertask\fullcalendar-active.js.下载" />
+    <Content Include="res\js\mastertask\fullcalendar.min.js.下载" />
+    <Content Include="res\js\mastertask\hm.js.下载" />
+    <Content Include="res\js\mastertask\jquery-1.12.4.min.js.下载" />
+    <Content Include="res\js\mastertask\jquery-price-slider.js.下载" />
+    <Content Include="res\js\mastertask\jquery.charts-sparkline.js.下载" />
+    <Content Include="res\js\mastertask\jquery.flot.js.下载" />
+    <Content Include="res\js\mastertask\jquery.flot.orderBars.js.下载" />
+    <Content Include="res\js\mastertask\jquery.flot.pie.js.下载" />
+    <Content Include="res\js\mastertask\jquery.flot.resize.js.下载" />
+    <Content Include="res\js\mastertask\jquery.flot.tooltip.min.js.下载" />
+    <Content Include="res\js\mastertask\jquery.js.下载" />
+    <Content Include="res\js\mastertask\jquery.mCustomScrollbar.concat.min.js.下载" />
+    <Content Include="res\js\mastertask\jquery.meanmenu.js.下载" />
+    <Content Include="res\js\mastertask\jquery.scrollUp.min.js.下载" />
+    <Content Include="res\js\mastertask\jquery.sparkline.min.js.下载" />
+    <Content Include="res\js\mastertask\jquery.sticky.js.下载" />
+    <Content Include="res\js\mastertask\main.js.下载" />
+    <Content Include="res\js\mastertask\mCustomScrollbar-active.js.下载" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

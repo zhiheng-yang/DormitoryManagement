@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{
+	padding: 0 0;
+	margin: 0 0;
+}
+body{
+	font-size:18px;
+	font-family:"微软雅黑";
+    color:#303030;
+}
+img{
+	border: none;
+}
+p,ul{
+	padding: 0 ;
+	margin: 0 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	color:#4d4d4d;
+	text-decoration:none;
+}
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+
+.mainbox{width:1200px;margin:100px auto 0 auto;}
+
+.mainbox h2 {
+    margin: 0px auto;
+    font-size: 36px;
+    line-height: 2em;
+    text-align: center;
+    position: relative;
+}
+.responsive {
+    margin:25px 0 0 0;
+}
+.mainbox table {
+    border-collapse: collapse;
+    border-top: 0!important;
+    width: 100%;
+}
+.mainbox table th {
+    color: #fff;
+    height: 75px;
+    min-width: 80px;
+    max-width: 60px;
+    white-space: nowrap;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+}
+.mainbox table th, .mainbox table td {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    background: #fff;
+}
+.mainbox .red {
+    color: #e40202;
+}
+.mainbox tr:nth-child(2n+1) td{
+    background:#f1f1f1;
+}
+.mainbox table td {
+    border: 1px #e9edf1 solid;
+    border-right: 1px #d1d1d1 solid;
+}
+.gou {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/gou.gif);
+}
