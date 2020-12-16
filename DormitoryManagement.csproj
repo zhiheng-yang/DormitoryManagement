@@ -112,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="front\WebForm1.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="res\css\css.css" />
     <Content Include="res\css\demo.css" />
     <Content Include="res\css\index.vsb.css" />
@@ -137,6 +138,26 @@
     <Content Include="res\img\z8.gif" />
     <Content Include="res\img\ztlj.png" />
     <Content Include="res\img\新建文本文档.txt" />
+    <Content Include="index_data\default.css" />
+    <Content Include="index_data\demo.css" />
+    <Content Include="index_data\Detector.js" />
+    <Content Include="index_data\jquery-ui.js" />
+    <Content Include="index_data\jquery.js" />
+    <Content Include="index_data\jquery_002.js" />
+    <Content Include="index_data\key.png" />
+    <Content Include="index_data\layui.css" />
+    <Content Include="index_data\layui.js" />
+    <Content Include="index_data\loaders.css" />
+    <Content Include="index_data\lock_icon_copy.png" />
+    <Content Include="index_data\Particleground.js" />
+    <Content Include="index_data\RequestAnimationFrame.js" />
+    <Content Include="index_data\stopExecutionOnTimeout.js" />
+    <Content Include="index_data\styles.css" />
+    <Content Include="index_data\ThreeExtras.js" />
+    <Content Include="index_data\ThreeWebGL.js" />
+    <Content Include="index_data\tick.png" />
+    <Content Include="index_data\Treatment.html" />
+    <Content Include="index_data\user_icon_copy.png" />
     <Content Include="res\js\index_data\default.css" />
     <Content Include="res\js\index_data\demo.css" />
     <Content Include="res\js\index_data\Detector.js" />
@@ -209,6 +230,13 @@
     <Content Include="homepage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
