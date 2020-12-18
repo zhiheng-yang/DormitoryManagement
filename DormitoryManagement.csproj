@@ -111,7 +111,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="front\WebForm1.aspx" />
+    <Content Include="WebForm1.aspx" />
     <Content Include="login.aspx" />
     <Content Include="res\css\css.css" />
     <Content Include="res\css\demo.css" />
@@ -228,6 +228,9 @@
     <Content Include="res\js\mastertask\z_stat.php" />
     <Content Include="Web.config" />
     <Content Include="homepage.aspx" />
+    <Content Include="example.aspx" />
+    <Content Include="RoomMangagement.aspx" />
+    <Content Include="HealthManagement.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.aspx.cs">
@@ -244,11 +247,11 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="front\WebForm1.aspx.cs">
+    <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="front\WebForm1.aspx.designer.cs">
+    <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -258,6 +261,27 @@
     </Compile>
     <Compile Include="homepage.aspx.designer.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="example.aspx.cs">
+      <DependentUpon>example.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="example.aspx.designer.cs">
+      <DependentUpon>example.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoomMangagement.aspx.cs">
+      <DependentUpon>RoomMangagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoomMangagement.aspx.designer.cs">
+      <DependentUpon>RoomMangagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthManagement.aspx.cs">
+      <DependentUpon>HealthManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthManagement.aspx.designer.cs">
+      <DependentUpon>HealthManagement.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -293,6 +317,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="front\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
