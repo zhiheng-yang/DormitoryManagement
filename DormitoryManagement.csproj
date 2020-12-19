@@ -231,6 +231,8 @@
     <Content Include="example.aspx" />
     <Content Include="RoomMangagement.aspx" />
     <Content Include="HealthManagement.aspx" />
+    <Content Include="VisitorManagement.aspx" />
+    <Content Include="NoticeManagement.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.aspx.cs">
@@ -282,6 +284,20 @@
     </Compile>
     <Compile Include="HealthManagement.aspx.designer.cs">
       <DependentUpon>HealthManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorManagement.aspx.cs">
+      <DependentUpon>VisitorManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisitorManagement.aspx.designer.cs">
+      <DependentUpon>VisitorManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NoticeManagement.aspx.cs">
+      <DependentUpon>NoticeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoticeManagement.aspx.designer.cs">
+      <DependentUpon>NoticeManagement.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -95,7 +95,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">来访管理</span></a>
+                            <a class="has-arrow" href="VisitorManagement.aspx" aria-expanded="false"><i class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">来访管理</span></a>
                             <ul class="submenu-angle collapse" aria-expanded="false">
                                 <li><a title="Inbox" href="#"><span class="mini-sub-pro">来访申请查看</span></a></li>
                                 <li><a title="View Mail" href="#"><span class="mini-sub-pro">View Mail</span></a></li>
@@ -103,7 +103,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-diamond icon-wrap"></i> <span class="mini-click-non">通知公告管理</span></a>
+                            <a class="has-arrow" href="NoticeManagement.aspx" aria-expanded="false"><i class="icon nalika-diamond icon-wrap"></i> <span class="mini-click-non">通知公告管理</span></a>
                             <ul class="submenu-angle collapse" aria-expanded="false">
                                 <li><a title="Google Map" href="#"><span class="mini-sub-pro">历史公告</span></a></li>
                                 <li><a title="Data Maps" href="#"><span class="mini-sub-pro">近期公告</span></a></li>
