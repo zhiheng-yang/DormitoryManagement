@@ -103,6 +103,14 @@
                             </ul>
                         </li>
                         <li>
+                            <a class="has-arrow" href="RoomMangagement.aspx" aria-expanded="false"><i class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">房间管理</span></a>
+                            <ul class="submenu-angle collapse" aria-expanded="false">
+                                <li><a title="Inbox" href="#"><span class="mini-sub-pro">房间查看</span></a></li>
+                                <li><a title="View Mail" href="#"><span class="mini-sub-pro">View Mail</span></a></li>
+                                <li><a title="Compose Mail" href="#"><span class="mini-sub-pro">Compose Mail</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
                             <a class="has-arrow" href="NoticeManagement.aspx" aria-expanded="false"><i class="icon nalika-diamond icon-wrap"></i> <span class="mini-click-non">通知公告管理</span></a>
                             <ul class="submenu-angle collapse" aria-expanded="false">
                                 <li><a title="Google Map" href="#"><span class="mini-sub-pro">历史公告</span></a></li>
