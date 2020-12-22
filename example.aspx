@@ -4,6 +4,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="mainbox">
         <div class="responsive">
+            <asp:Textbox ID="Button1" runat="server" Text="Button" class="btn" Width="82px"/>
+            <asp:Textbox ID="Button2" runat="server" Text="Button" class="btn btn-secondary" Width="78px" />
+            <asp:Label ID="Label1" runat="server" Text="Label" class="btn"></asp:Label>
+            <br />
             <table>
             <tbody>
                 <tr>
@@ -20,7 +24,7 @@
                     <td class="red">2880</td>
                     <td class="red">1880</td>
                     <td class="red">980</td>
-                    <td class="red">498</td>
+                    <td class="red"><asp:Textbox ID="Button3" runat="server" Text="Button" class="btn" Width="82px"/></td>
                 </tr>
                 <tr>
                     <td>上传文件个数</td>

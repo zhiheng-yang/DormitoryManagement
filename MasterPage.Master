@@ -8,6 +8,7 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="res/css/btn_style.css" rel="stylesheet">
         <link href="res/js/mastertask/table.css" rel="stylesheet">
         <!-- favicon
         ============================================ -->
