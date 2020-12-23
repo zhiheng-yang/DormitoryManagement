@@ -237,6 +237,11 @@
     <Content Include="RepairApplication.aspx" />
     <Content Include="RepairApplicationManagement.aspx" />
     <Content Include="VisitRegistration.aspx" />
+    <Content Include="UpdatePassword.aspx" />
+    <Content Include="HealthHistory.aspx" />
+    <Content Include="UserManagement.aspx" />
+    <Content Include="HealthReport.aspx" />
+    <Content Include="WebForm14.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.aspx.cs">
@@ -323,6 +328,41 @@
     </Compile>
     <Compile Include="VisitRegistration.aspx.designer.cs">
       <DependentUpon>VisitRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.designer.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthHistory.aspx.cs">
+      <DependentUpon>HealthHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthHistory.aspx.designer.cs">
+      <DependentUpon>HealthHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthReport.aspx.cs">
+      <DependentUpon>HealthReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthReport.aspx.designer.cs">
+      <DependentUpon>HealthReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm14.aspx.cs">
+      <DependentUpon>WebForm14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm14.aspx.designer.cs">
+      <DependentUpon>WebForm14.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -98,6 +98,7 @@
                                 <li><a title="Dashboard v.2" href="HealthReport.aspx"><span class="mini-sub-pro">上报健康</span></a></li>
                                 <li><a title="Dashboard v.2" href="HealthHistory.aspx"><span class="mini-sub-pro">健康上报记录</span></a></li>
                                 <li><a title="Dashboard v.2" href="HealthManagement.aspx"><span class="mini-sub-pro">学生健康管理</span></a></li>
+                                <li><a title="Dashboard v.2" href="WebForm1.aspx"><span class="mini-sub-pro">很早之前的一个垃圾示例界面</span></a></li>
                             </ul>
                         </li>
                         <li>
