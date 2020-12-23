@@ -234,6 +234,8 @@
     <Content Include="HealthManagement.aspx" />
     <Content Include="VisitorManagement.aspx" />
     <Content Include="NoticeManagement.aspx" />
+    <Content Include="RepairApplication.aspx" />
+    <Content Include="RepairApplicationManagement.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.aspx.cs">
@@ -299,6 +301,20 @@
     </Compile>
     <Compile Include="NoticeManagement.aspx.designer.cs">
       <DependentUpon>NoticeManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepairApplication.aspx.cs">
+      <DependentUpon>RepairApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepairApplication.aspx.designer.cs">
+      <DependentUpon>RepairApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepairApplicationManagement.aspx.cs">
+      <DependentUpon>RepairApplicationManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepairApplicationManagement.aspx.designer.cs">
+      <DependentUpon>RepairApplicationManagement.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
