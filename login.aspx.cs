@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -24,7 +26,62 @@ namespace DormitoryManagement
 
         public void Login()
         {
-            Response.Redirect("example.aspx");
+            // **************************************************
+            // 为了方便测试而不需要输入用户名密码，后期需要删掉**
+            Response.Redirect("example.aspx"); //              **
+            // 为了方便测试而不需要输入用户名密码，后期需要删掉**
+            // **************************************************
+
+
+            string username = this.username.Text;
+            string password = this.password.Text;
+
+            if (username == "")
+            {
+                Response.Write(@"<script>alert('用户名不能为空！');</script>");
+                return;
+            }
+            if (password == "")
+            {
+                Response.Write(@"<script>alert('密码不能为空！');</script>");
+                return;
+            }
+            String sql = "select name from user where username=@username and password=@password";
+            String strConnection = "server=49.234.112.12;port=3306;user=root;password=122316;database=gongyu;Charset=utf8;Allow Zero Datetime=True;Allow User Variables=True";
+            try
+            {
+                MySqlParameter[] parameters = { new MySqlParameter("@username", username), new MySqlParameter("@password", password) };
+                MySqlConnection conn = new MySqlConnection(strConnection);
+                conn.Open();
+                MySqlCommand cmd = conn.CreateCommand();
+                //cmd.Parameters.AddRange(parameters);
+                cmd.CommandText = sql;
+
+                //Response.Write(cmd.ExecuteNonQuery());
+                cmd.Parameters.AddRange(parameters);
+                DataSet ds = new DataSet();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(ds);
+                DataTable table = ds.Tables[0];
+                // 通过判断记录的条数来确定是否有该用户
+                if (ds.Tables[0].Rows.Count != 0)
+                {
+                    Response.Redirect("example.aspx"); 
+                }
+
+                else
+                {
+                    Response.Write(@"<script>alert('密码错误，登录失败！');</script>");
+                }
+                
+                conn.Close();
+
+            }
+            catch (Exception e)
+            {
+                
+                Response.Write(e.Message.ToString());
+            }
             //string str = "server=49.234.112.12;port=3306;user=root;password=122316;database=gongyu;Charset=utf8;";
             //SqlConnection conn = new SqlConnection(str);
             //conn.Open();

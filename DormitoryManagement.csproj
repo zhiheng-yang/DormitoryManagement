@@ -111,7 +111,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="btn_style.css" />
     <Content Include="res\css\btn_style.css" />
     <Content Include="WebForm1.aspx" />
     <Content Include="login.aspx" />
