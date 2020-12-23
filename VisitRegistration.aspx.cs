@@ -13,5 +13,14 @@ namespace DormitoryManagement
         {
 
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            CheckIfValid();
+        }
+        public void CheckIfValid()
+        {
+
+        }
     }
 }
