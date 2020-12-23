@@ -13,7 +13,9 @@ namespace DormitoryManagement.front
 
     public partial class MasterPage
     {
-         
+
+        /// <summary>
+        /// head 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。

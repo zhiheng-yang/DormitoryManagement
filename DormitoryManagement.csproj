@@ -241,7 +241,8 @@
     <Content Include="HealthHistory.aspx" />
     <Content Include="UserManagement.aspx" />
     <Content Include="HealthReport.aspx" />
-    <Content Include="WebForm14.aspx" />
+    <Content Include="NoticeHistory.aspx" />
+    <Content Include="RoomInfo.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.aspx.cs">
@@ -357,12 +358,19 @@
     <Compile Include="HealthReport.aspx.designer.cs">
       <DependentUpon>HealthReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm14.aspx.cs">
-      <DependentUpon>WebForm14.aspx</DependentUpon>
+    <Compile Include="NoticeHistory.aspx.cs">
+      <DependentUpon>NoticeHistory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm14.aspx.designer.cs">
-      <DependentUpon>WebForm14.aspx</DependentUpon>
+    <Compile Include="NoticeHistory.aspx.designer.cs">
+      <DependentUpon>NoticeHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoomInfo.aspx.cs">
+      <DependentUpon>RoomInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoomInfo.aspx.designer.cs">
+      <DependentUpon>RoomInfo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
