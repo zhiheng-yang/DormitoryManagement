@@ -91,10 +91,13 @@
                                    <span class="mini-click-non">学生管理</span>
                                 </a>
                             <ul class="submenu-angle collapse in" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="#"><span class="mini-sub-pro">健康上报记录查看</span></a></li>
-                                <li><a title="Dashboard v.2" href="#"><span class="mini-sub-pro">健康上报</span></a></li>
+                                <li><a title="Dashboard v.2" href="UserManagement.aspx"><span class="mini-sub-pro">学生管理</span></a></li>
                                 <li><a title="Dashboard v.2" href="RepairApplication.aspx"><span class="mini-sub-pro">维修申请</span></a></li>
                                 <li><a title="Dashboard v.2" href="RepairApplicationManagement.aspx"><span class="mini-sub-pro">维修申请管理</span></a></li>
+                                <li><a title="Dashboard v.2" href="UpdatePassword.aspx"><span class="mini-sub-pro">修改密码</span></a></li>
+                                <li><a title="Dashboard v.2" href="HealthReport.aspx"><span class="mini-sub-pro">上报健康</span></a></li>
+                                <li><a title="Dashboard v.2" href="HealthHistory.aspx"><span class="mini-sub-pro">健康上报记录</span></a></li>
+                                <li><a title="Dashboard v.2" href="HealthManagement.aspx"><span class="mini-sub-pro">学生健康管理</span></a></li>
                             </ul>
                         </li>
                         <li>
