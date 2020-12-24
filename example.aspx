@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="mainbox">
         <div class="responsive">
-            <asp:Textbox ID="Button1" runat="server" Text="Button" class="btn" Width="82px"/>
+            <asp:Textbox ID="Button1" runat="server" Text="Button" class="btn" Width="82px" OnTextChanged="Button1_TextChanged"/>
             <asp:Textbox ID="Button2" runat="server" Text="Button" class="btn btn-secondary" Width="78px" />
             <asp:Label ID="Label1" runat="server" Text="Label" class="btn"></asp:Label>
             <br />

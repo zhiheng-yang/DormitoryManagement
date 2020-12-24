@@ -45,7 +45,7 @@
 					</div>
 					<%--<input type="password" name="pwd" placeholder="密码" maxlength="16" type="text" autocomplete="off">--%>
                     
-                         <asp:TextBox ID="password" runat="server"></asp:TextBox>
+                         <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
                     
 					<div class="validation">
 						<img alt="" src="index_data/tick.png">

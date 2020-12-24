@@ -11,7 +11,12 @@ namespace DormitoryManagement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write(@"<script>alert('登录成功！');</script>");
+
+        }
+
+        protected void Button1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
