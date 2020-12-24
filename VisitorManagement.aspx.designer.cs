@@ -9,8 +9,6 @@
 
 namespace DormitoryManagement
 {
-
-
     public partial class WebForm5
     {
 

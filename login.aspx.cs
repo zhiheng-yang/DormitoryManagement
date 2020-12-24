@@ -50,7 +50,7 @@ namespace DormitoryManagement
                 Response.Write(@"<script>alert('密码不能为空！');</script>");
                 return;
             }
-            String sql = "select role_id from user where username=@username and password=@password";
+            String sql = "select * from user where username=@username and password=@password";
             String strConnection = "server=49.234.112.12;port=3306;user=root;password=122316;database=gongyu;Charset=utf8;Allow Zero Datetime=True;Allow User Variables=True";
             try
             {
@@ -69,7 +69,7 @@ namespace DormitoryManagement
                 DataTable table = ds.Tables[0];
 
                 // 获得了他的身份id,并存在session中
-                // Session.Contents["id"] = table.Rows[0]["id"].ToString();
+                //Session.Contents["id"] = table.Rows[0]["id"].ToString();
                 Session.Contents["role_id"] = table.Rows[0]["role_id"].ToString();
                 // Session.Contents["name"] = table.Rows[0]["name"].ToString();
                 //Session.Contents["username"] = table.Rows[0]["username"].ToString();
@@ -145,6 +145,7 @@ namespace DormitoryManagement
                 //DataTable table = ds.Tables[0];
 
                 // 获得了他的身份id,并存在session中
+                Session.Contents["id"] = "1";
                 Session.Contents["role_id"] = "1";
                 Session.Timeout = 120;
                 // 通过判断记录的条数来确定是否有该用户
