@@ -127,57 +127,32 @@ namespace DormitoryManagement
             string username = "zach";
             string password = "123456";
 
-            //if (username == "")
-            //{
-            //    Response.Write(@"<script>alert('用户名不能为空！');</script>");
-            //    return;
-            //}
-            //if (password == "")
-            //{
-            //    Response.Write(@"<script>alert('密码不能为空！');</script>");
-            //    return;
-            //}
             String sql = "select role_id from user where username=@username and password=@password";
             String strConnection = "server=49.234.112.12;port=3306;user=root;password=122316;database=gongyu;Charset=utf8;Allow Zero Datetime=True;Allow User Variables=True";
             try
             {
-                MySqlParameter[] parameters = { new MySqlParameter("@username", username), new MySqlParameter("@password", password) };
-                MySqlConnection conn = new MySqlConnection(strConnection);
-                conn.Open();
-                MySqlCommand cmd = conn.CreateCommand();
-                //cmd.Parameters.AddRange(parameters);
-                cmd.CommandText = sql;
+                //MySqlParameter[] parameters = { new MySqlParameter("@username", username), new MySqlParameter("@password", password) };
+                //MySqlConnection conn = new MySqlConnection(strConnection);
+                //conn.Open();
+                //MySqlCommand cmd = conn.CreateCommand();
+                //cmd.CommandText = sql;
 
-                //Response.Write(cmd.ExecuteNonQuery());
-                cmd.Parameters.AddRange(parameters);
-                DataSet ds = new DataSet();
-                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                adapter.Fill(ds);
-                DataTable table = ds.Tables[0];
+                ////Response.Write(cmd.ExecuteNonQuery());
+                //cmd.Parameters.AddRange(parameters);
+                //DataSet ds = new DataSet();
+                //MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                //adapter.Fill(ds);
+                //DataTable table = ds.Tables[0];
 
                 // 获得了他的身份id,并存在session中
-                // Session.Contents["id"] = table.Rows[0]["id"].ToString();
-                Session.Contents["role_id"] = table.Rows[0]["role_id"].ToString();
-                // Session.Contents["name"] = table.Rows[0]["name"].ToString();
-                //Session.Contents["username"] = table.Rows[0]["username"].ToString();
+                Session.Contents["role_id"] = "1";
                 Session.Timeout = 120;
                 // 通过判断记录的条数来确定是否有该用户
-                if (ds.Tables[0].Rows.Count != 0)
-                {
-                    Response.Redirect("example.aspx");
-                }
-
-                else
-                {
-                    Response.Write(@"<script>alert('密码错误，登录失败！');</script>");
-                }
-
-                conn.Close();
+                Response.Redirect("example.aspx");
 
             }
             catch (Exception e)
             {
-
                 Response.Write(e.Message.ToString());
             }
         }
