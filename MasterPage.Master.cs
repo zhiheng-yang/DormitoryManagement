@@ -59,21 +59,21 @@ namespace DormitoryManagement.front
                 {
                     String menu = table.Rows[i]["description"].ToString();
                     if ("维修申请".Equals(menu)) 维修申请.Visible = true;
-                    else if("维修申请管理".Equals(menu)) 维修申请管理.Visible = true;
-                    else if("维修记录查看".Equals(menu)) 维修记录查看.Visible = true;
-                    else if("权限管理".Equals(menu)) 权限管理.Visible = true;
-                    else if("公告查看".Equals(menu)) 公告查看.Visible = true;
-                    else if("公告管理".Equals(menu)) 公告管理.Visible = true;
-                    else if("来访申请".Equals(menu)) 来访申请.Visible = true;
-                    else if("来访管理".Equals(menu)) 来访管理.Visible = true;
-                    else if("房间管理".Equals(menu)) 房间管理.Visible = true;
-                    else if("查看房间".Equals(menu)) 查看房间.Visible = true;
-                    else if("学生管理".Equals(menu)) 学生管理.Visible = true;
-                    else if("修改密码".Equals(menu)) 修改密码.Visible = true;
-                    else if("上报健康".Equals(menu)) 上报健康.Visible = true;
-                    else if("健康上报记录".Equals(menu)) 健康上报记录.Visible = false;
-                    else if("学生健康管理".Equals(menu)) 学生健康管理.Visible = false;
-
+                    else if ("维修申请管理".Equals(menu)) 维修申请管理.Visible = true;
+                    else if ("维修记录查看".Equals(menu)) 维修记录查看.Visible = true;
+                    else if ("权限管理".Equals(menu)) 权限管理.Visible = true;
+                    else if ("公告查看".Equals(menu)) 公告查看.Visible = true;
+                    else if ("公告管理".Equals(menu)) 公告管理.Visible = true;
+                    else if ("来访申请".Equals(menu)) 来访申请.Visible = true;
+                    else if ("来访管理".Equals(menu)) 来访管理.Visible = true;
+                    else if ("房间管理".Equals(menu)) 房间管理.Visible = true;
+                    else if ("查看房间".Equals(menu)) 查看房间.Visible = true;
+                    else if ("学生管理".Equals(menu)) 学生管理.Visible = true;
+                    else if ("修改密码".Equals(menu)) 修改密码.Visible = true;
+                    else if ("上报健康".Equals(menu)) 上报健康.Visible = true;
+                    else if ("健康上报记录".Equals(menu)) 健康上报记录.Visible = true;
+                    else if ("学生健康管理".Equals(menu)) 学生健康管理.Visible = true;
+                    else if ("身份管理".Equals(menu)) 身份管理.Visible = true;
                 }
                 
                 conn.Close();

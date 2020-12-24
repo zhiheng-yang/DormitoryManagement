@@ -243,6 +243,7 @@
     <Content Include="HealthReport.aspx" />
     <Content Include="NoticeHistory.aspx" />
     <Content Include="RoomInfo.aspx" />
+    <Content Include="RoleManagement.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.aspx.cs">
@@ -371,6 +372,13 @@
     </Compile>
     <Compile Include="RoomInfo.aspx.designer.cs">
       <DependentUpon>RoomInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManagement.aspx.cs">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoleManagement.aspx.designer.cs">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
