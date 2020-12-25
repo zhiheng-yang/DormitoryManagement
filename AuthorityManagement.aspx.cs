@@ -18,7 +18,7 @@ namespace DormitoryManagement
             {
                 String strConnection = "server=49.234.112.12;port=3306;user=root;password=122316;database=gongyu;Charset=utf8;Allow Zero Datetime=True;Allow User Variables=True";
                 MySqlConnection conn = new MySqlConnection(strConnection);
-                String strSql = "select * where from menu";
+                String strSql = "select * from menu";
                 conn.Open();
                 da = new MySqlDataAdapter(strSql, conn);
                 MySqlCommandBuilder cb = new MySqlCommandBuilder(da);
@@ -48,5 +48,14 @@ namespace DormitoryManagement
             }
         }
 
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+
+        protected void GridView2_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
     }
 }

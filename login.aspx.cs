@@ -82,7 +82,7 @@ namespace DormitoryManagement
                 // 通过判断记录的条数来确定是否有该用户
                 if (ds.Tables[0].Rows.Count != 0)
                 {
-                    Response.Redirect("example.aspx"); 
+                    Response.Redirect("AuthorityManagement.aspx"); 
                 }
 
                 else
@@ -157,7 +157,7 @@ namespace DormitoryManagement
                 Session.Contents["username"] = "pdx";
                 Session.Timeout = 120;
                 // 通过判断记录的条数来确定是否有该用户
-                Response.Redirect("RoleManagement.aspx");
+                Response.Redirect("AuthorityManagement.aspx");
 
             }
             catch (Exception e)
