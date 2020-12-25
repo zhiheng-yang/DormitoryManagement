@@ -12,9 +12,6 @@
                     <asp:BoundField HeaderText="描述" DataField="description" HeaderStyle-BackColor="#FF6699" >
 <HeaderStyle BackColor="#FF6699"></HeaderStyle>
                     </asp:BoundField>
-
-                    <asp:ButtonField CommandName="Edi" HeaderText="操作" ShowHeader="True" Text="编辑" DataTextField="description" />
-
                     <asp:ButtonField ButtonType="Button" CommandName="del" HeaderText="操作" Text="删除" HeaderStyle-BackColor="Black" Visible="True">
                         <HeaderStyle BackColor="Black"></HeaderStyle>
                     </asp:ButtonField>

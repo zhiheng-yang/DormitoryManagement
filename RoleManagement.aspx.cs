@@ -64,9 +64,7 @@ namespace DormitoryManagement
             }
         }
 
-
-
-
+        [Obsolete]
         protected void GridView1_OnRowCommand(object sender, GridViewCommandEventArgs e)
         {
 
@@ -91,12 +89,11 @@ namespace DormitoryManagement
                 adapter.Fill(ds);
                 //DataTable table = ds.Tables[0];
                 Response.Redirect("RoleManagement.aspx");
-
             }
             catch (Exception e4)
             {
-
-                Response.Write(e4.Message.ToString());
+                this.Page.RegisterStartupScript(" ", "<script>alert(' 已有了该身份的用户，不能删除！ '); </script> "); 
+                // Response.Write(e4.Message.ToString());
             }
         }
 
