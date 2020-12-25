@@ -62,8 +62,8 @@ namespace DormitoryManagement.front
                     else if ("维修申请管理".Equals(menu)) 维修申请管理.Visible = true;
                     else if ("维修记录查看".Equals(menu)) 维修记录查看.Visible = true;
                     else if ("权限管理".Equals(menu)) 权限管理.Visible = true;
-                    else if ("公告查看".Equals(menu)) 公告查看.Visible = true;
-                    else if ("公告管理".Equals(menu)) 公告管理.Visible = true;
+                    else if ("通知公告查看".Equals(menu)) 公告查看.Visible = true;
+                    else if ("通知公告管理".Equals(menu)) 公告管理.Visible = true;
                     else if ("来访申请".Equals(menu)) 来访申请.Visible = true;
                     else if ("来访管理".Equals(menu)) 来访管理.Visible = true;
                     else if ("房间管理".Equals(menu)) 房间管理.Visible = true;
