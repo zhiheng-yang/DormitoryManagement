@@ -7,11 +7,17 @@
 
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <asp:Button class="btn" ID="Button1" runat="server" OnClick="Button1_Click" Text="增加身份" />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns ="false">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns ="False" AllowPaging="True" OnRowCommand="GridView1_OnRowCommand">
                 <Columns>
-                    <asp:BoundField HeaderText="描述" DataField="description" HeaderStyle-BackColor="#FF6699"  >
+                    <asp:BoundField HeaderText="描述" DataField="description" HeaderStyle-BackColor="#FF6699" >
 <HeaderStyle BackColor="#FF6699"></HeaderStyle>
                     </asp:BoundField>
+
+                    <asp:ButtonField CommandName="Edi" HeaderText="操作" ShowHeader="True" Text="编辑" DataTextField="description" />
+
+                    <asp:ButtonField ButtonType="Button" CommandName="del" HeaderText="操作" Text="删除" HeaderStyle-BackColor="Black" Visible="True">
+                        <HeaderStyle BackColor="Black"></HeaderStyle>
+                    </asp:ButtonField>
 
                 </Columns>
             </asp:GridView>

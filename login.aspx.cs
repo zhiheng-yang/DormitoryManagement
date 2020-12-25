@@ -149,7 +149,7 @@ namespace DormitoryManagement
                 Session.Contents["role_id"] = "1";
                 Session.Timeout = 120;
                 // 通过判断记录的条数来确定是否有该用户
-                Response.Redirect("example.aspx");
+                Response.Redirect("RoleManagement.aspx");
 
             }
             catch (Exception e)

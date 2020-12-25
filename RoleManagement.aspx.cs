@@ -63,5 +63,42 @@ namespace DormitoryManagement
                 Response.Write(e3.Message.ToString());
             }
         }
+
+
+
+
+        protected void GridView1_OnRowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+            int index = Int32.Parse(e.CommandArgument.ToString());
+            String description = this.GridView1.Rows[index].Cells[0].Text;
+
+            String sql = "delete from role where description = @description";
+            String strConnection = "server=49.234.112.12;port=3306;user=root;password=122316;database=gongyu;Charset=utf8;Allow Zero Datetime=True;Allow User Variables=True";
+            try
+            {
+                MySqlParameter[] parameters = { new MySqlParameter("@description", description)};
+                MySqlConnection conn = new MySqlConnection(strConnection);
+                conn.Open();
+                MySqlCommand cmd = conn.CreateCommand();
+                //cmd.Parameters.AddRange(parameters);
+                cmd.CommandText = sql;
+
+                //Response.Write(cmd.ExecuteNonQuery());
+                cmd.Parameters.AddRange(parameters);
+                DataSet ds = new DataSet();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(ds);
+                //DataTable table = ds.Tables[0];
+                Response.Redirect("RoleManagement.aspx");
+
+            }
+            catch (Exception e4)
+            {
+
+                Response.Write(e4.Message.ToString());
+            }
+        }
+
     }
 }
