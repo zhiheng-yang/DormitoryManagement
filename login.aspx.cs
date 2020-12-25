@@ -20,12 +20,13 @@ namespace DormitoryManagement
         }
 
         protected void Button1_Click(object sender, EventArgs e) {
-            
+
             // QuickLogin是可以直接点击登录，默认登录zach用户，密码123456，测试时使用
             QuickLogin();
 
             // 正确的登录界面，正式使用时用这个
             // Login();
+
         }
 
         public void Login()
@@ -69,8 +70,12 @@ namespace DormitoryManagement
                 DataTable table = ds.Tables[0];
 
                 // 获得了他的身份id,并存在session中
-                //Session.Contents["id"] = table.Rows[0]["id"].ToString();
+                Session.Contents["id"] = table.Rows[0]["id"].ToString();
                 Session.Contents["role_id"] = table.Rows[0]["role_id"].ToString();
+                Session.Contents["IDCard"] = table.Rows[0]["IDCard"].ToString();
+                Session.Contents["name"] = table.Rows[0]["name"].ToString();
+                Session.Contents["username"] = table.Rows[0]["username"].ToString();
+
                 // Session.Contents["name"] = table.Rows[0]["name"].ToString();
                 //Session.Contents["username"] = table.Rows[0]["username"].ToString();
                 Session.Timeout = 120;
@@ -147,6 +152,9 @@ namespace DormitoryManagement
                 // 获得了他的身份id,并存在session中
                 Session.Contents["id"] = "1";
                 Session.Contents["role_id"] = "1";
+                Session.Contents["IDCard"] = "371525200012230037";
+                Session.Contents["name"] = "派大星";
+                Session.Contents["username"] = "pdx";
                 Session.Timeout = 120;
                 // 通过判断记录的条数来确定是否有该用户
                 Response.Redirect("RoleManagement.aspx");

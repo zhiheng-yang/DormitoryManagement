@@ -56,7 +56,7 @@ namespace DormitoryManagement
                 dst.Tables[0].Rows.Add(dr);
                 da.Update(dst);
                 bind_gridview();
-                Response.Write("RoleManagement.aspx");
+               // Response.Redirect("RoleManagement.aspx");
             }
             catch(MySqlException e3)
             {
@@ -97,5 +97,9 @@ namespace DormitoryManagement
             }
         }
 
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

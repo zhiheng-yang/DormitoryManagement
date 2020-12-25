@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-            <div class="mainbox">
-        <div class="responsive" class="btn">
+    <div class="mainbox">
+        <div class="responsive">
             <asp:GridView ID="HealHis" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Font-Bold="True" >
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
