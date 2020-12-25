@@ -88,7 +88,7 @@
                         <li class="active">
                             <a class="has-arrow" href="#">
                                    <i class="icon nalika-home icon-wrap"></i>
-                                   <span class="mini-click-non">学生管理</span>
+                                   <span class="mini-click-non">宿舍管理系统</span>
                                 </a>
                             <ul class="submenu-angle collapse in" aria-expanded="true">
                                 <li runat="server" id="维修申请" visible="false"><a title="Dashboard v.2" href="RepairApplication.aspx"><span class="mini-sub-pro">杨：维修申请</span></a></li>
