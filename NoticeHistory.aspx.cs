@@ -87,7 +87,7 @@ namespace DormitoryManagement
             da.Fill(ds1);
             if (ds1.Tables[0].Rows.Count == 0)
             {
-                Response.Write(@"<script>alert('未找到该发布人发布的公告！');</script>");
+                Response.Write(@"<script>alert('未找到该发布人！');</script>");
                 findAll();
             }
             else
@@ -104,11 +104,18 @@ namespace DormitoryManagement
                 da = new MySqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
-                GridView1.DataSource = ds.Tables[0].DefaultView;
-                GridView1.DataBind();
-                setName(GridView1);
-                conn.Close();
-                txtDescription.Text = "";
+                if (ds.Tables[0].Rows.Count == 0)
+                {
+                    Response.Write(@"<script>alert('未找到该管理员发布的公告！');</script>");
+                }
+                else
+                {
+                    GridView1.DataSource = ds.Tables[0].DefaultView;
+                    GridView1.DataBind();
+                    setName(GridView1);
+                    conn.Close();
+                    txtDescription.Text = "";
+                }
             }
         }
         protected void findAll()
