@@ -96,8 +96,8 @@
                                 <li runat="server" id="维修记录查看" visible="false"><a title="Dashboard v.2" href="#"><span class="mini-sub-pro">杨：维修记录查看</span></a></li>
                                 <li runat="server" id="身份管理" visible="false"><a title="Dashboard v.2" href="RoleManagement.aspx"><span class="mini-sub-pro">杨：身份管理</span></a></li>
                                 <li runat="server" id="权限管理" visible="false"><a title="Dashboard v.2" href="AuthorityManagement.aspx"><span class="mini-sub-pro">杨：权限管理</span></a></li>
-                                <li runat="server" id="公告查看" visible="false"><a title="Dashboard v.2" href="NoticeHistory.aspx"><span class="mini-sub-pro">霍：公告查看</span></a></li>
-                                <li runat="server" id="公告管理" visible="false"><a title="Dashboard v.2" href="NoticeManagement.aspx"><span class="mini-sub-pro">霍：公告管理</span></a></li>
+                                <li runat="server" id="公告查看" visible="false"><a title="Dashboard v.2" href="NoticeHistory.aspx"><span class="mini-sub-pro">霍：通知公告查看</span></a></li>
+                                <li runat="server" id="公告管理" visible="false"><a title="Dashboard v.2" href="NoticeManagement.aspx"><span class="mini-sub-pro">霍：通知公告管理</span></a></li>
                                 <li runat="server" id="来访申请" visible="false"><a title="Dashboard v.2" href="VisitRegistration.aspx"><span class="mini-sub-pro">危：来访申请</span></a></li>
                                 <li runat="server" id="来访管理" visible="false"><a title="Dashboard v.2" href="VisitorManagement.aspx"><span class="mini-sub-pro">危：来访管理</span></a></li>
                                 <li runat="server" id="房间管理" visible="false"><a title="Dashboard v.2" href="RoomMangagement.aspx"><span class="mini-sub-pro">王：房间管理</span></a></li>

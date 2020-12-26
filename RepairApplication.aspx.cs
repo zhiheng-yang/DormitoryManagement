@@ -38,30 +38,30 @@ namespace DormitoryManagement
         }
 
 
-        private string GetCurrentIDCard()
-        {
-            string idCard = "";
-            string userId = Session.Contents["id"].ToString();
-            try
-            {
-                MySqlConnection conn = new MySqlConnection(strConnection);
-                String strSql = "select IDCard from user where id = " + userId;
-                //Response.Write("<script>alert(' " + strSql + " ');</script>");
-                conn.Open();
-                MySqlCommand mySqlCommand = new MySqlCommand(strSql, conn);
-                MySqlCommandBuilder cb = new MySqlCommandBuilder(da);
-                da = new MySqlDataAdapter(mySqlCommand);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                idCard = ds.Tables[0].Rows[0][0].ToString();
-                conn.Close();
-            }
-            catch (MySqlException ex)
-            {
-                Response.Write(ex.Message.ToString());
-            }
-            return idCard;
-        }
+        //private string GetCurrentIDCard()
+        //{
+        //    string idCard = "";
+        //    string userId = Session.Contents["id"].ToString();
+        //    try
+        //    {
+        //        MySqlConnection conn = new MySqlConnection(strConnection);
+        //        String strSql = "select IDCard from user where id = " + userId;
+        //        //Response.Write("<script>alert(' " + strSql + " ');</script>");
+        //        conn.Open();
+        //        MySqlCommand mySqlCommand = new MySqlCommand(strSql, conn);
+        //        MySqlCommandBuilder cb = new MySqlCommandBuilder(da);
+        //        da = new MySqlDataAdapter(mySqlCommand);
+        //        DataSet ds = new DataSet();
+        //        da.Fill(ds);
+        //        idCard = ds.Tables[0].Rows[0][0].ToString();
+        //        conn.Close();
+        //    }
+        //    catch (MySqlException ex)
+        //    {
+        //        Response.Write(ex.Message.ToString());
+        //    }
+        //    return idCard;
+        //}
 
         private void FillGridView()
         {

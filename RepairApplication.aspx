@@ -23,7 +23,7 @@
                 <tr>
                     <th>
                         
-                        <asp:Panel ID="Panel1" runat="server" Visible="False">
+                        <asp:Panel ID="Panel1" runat="server" Visible="False" Height ="1px">
                             <table class="nav-justified">
                                 <tr>
                                     <td colspan="2" style="background: #e4644a;">
