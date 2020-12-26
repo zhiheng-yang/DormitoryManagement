@@ -16,6 +16,7 @@ namespace DormitoryManagement
         private string arrMsg;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["room_id"] = "1";
             FillGridView();
             //SetName(GridView1);
             SetGrantedStatus(GridView1);
@@ -200,7 +201,7 @@ namespace DormitoryManagement
                 }
                 catch (MySqlException ex)
                 {
-                    Response.Write(ex.Message.ToString());
+                    Response.Write(@"<script>alert(' " + "申请不能提交！" + " ');</script>");
                 }
             }
             else
