@@ -79,7 +79,7 @@
             <div class="nalika-profile">
                 <div class="profile-dtl">
                     <a href="#"><img src="res/js/mastertask/4.jpg" alt=""></a>
-                    <b><asp:Label ID="NAME" runat="server" CssClass="btn">杨志恒</asp:Label></b>
+                    <b><a href="login.aspx"><asp:Label ID="NAME" runat="server" CssClass="btn">杨志恒</asp:Label></a></b>
                 </div>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar mCustomScrollbar _mCS_1 mCS-autoHide" style="position: relative; overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-light-1 mCSB_vertical mCSB_outside" tabindex="0" style="max-height: none;"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
@@ -250,7 +250,7 @@
         ============================================ -->
     <script type="text/javascript">
 
-    </script>
+</script>
 
 
     <script src="res/js/mastertask/main.js"></script><a id="scrollUp" href="#" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>

@@ -14,7 +14,6 @@ namespace DormitoryManagement.front
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            NAME.Text = Session.Contents["name"].ToString();
             if (Session.Contents["role_id"] == null)
             {
                 Response.Redirect("login.aspx");
@@ -23,6 +22,8 @@ namespace DormitoryManagement.front
             {
                 getMenus();
             }
+            NAME.Text = "退出： " + Session.Contents["name"].ToString();
+
         }
 
         protected void Page_LoadComplete(object sender, EventArgs e)
@@ -52,7 +53,7 @@ namespace DormitoryManagement.front
                 // Response.Write(ds.Tables[0].Rows.Count);
                 String wxsq = "维修申请";
                 Label label = (Label)Page.FindControl("维修申请");
-                
+
 
                 //label.Visible = false;
                 //维修申请.Visible = false;
@@ -76,10 +77,10 @@ namespace DormitoryManagement.front
                     else if ("学生健康管理".Equals(menu)) 学生健康管理.Visible = true;
                     else if ("身份管理".Equals(menu)) 身份管理.Visible = true;
                 }
-                
+
                 conn.Close();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Response.Write(e.Message.ToString());
             }

@@ -16,6 +16,7 @@ namespace DormitoryManagement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session.Clear();
             //Response.Write("<script>alert('"+username.Text+" "+password.Text+"')</script>");
         }
 
@@ -95,8 +96,8 @@ namespace DormitoryManagement
             }
             catch (Exception e)
             {
-                
-                Response.Write(e.Message.ToString());
+                Response.Write(@"<script>alert('密码错误，登录失败！');</script>");
+                // Response.Write(e.Message.ToString());
             }
             //string str = "server=49.234.112.12;port=3306;user=root;password=122316;database=gongyu;Charset=utf8;";
             //SqlConnection conn = new SqlConnection(str);

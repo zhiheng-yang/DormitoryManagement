@@ -98,7 +98,7 @@ namespace DormitoryManagement
             catch (Exception ex)
             {
                 Response.Write(@"<script>alert('查询失败！');</script>");
-                Response.Write(ex.Message.ToString());
+                //Response.Write(ex.Message.ToString());
             }
         }
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e) { }
@@ -132,7 +132,7 @@ namespace DormitoryManagement
                 catch (MySqlException ex)
                 {
                     Response.Write(@"<script>alert('删除失败！');</script>");
-                    Response.Write(ex.Message.ToString());
+                    //Response.Write(ex.Message.ToString());
                 }
             }
             //修改
@@ -209,7 +209,7 @@ namespace DormitoryManagement
             catch (MySqlException ex)
             {
                 Response.Write(@"<script>alert('数据无效！');</script>");
-                Response.Write(ex.Message.ToString());
+                // Response.Write(ex.Message.ToString());
             }
             lblApart2.Visible = false;
             txtApart2.Visible = false;
@@ -261,7 +261,7 @@ namespace DormitoryManagement
             catch (MySqlException ex)
             {
                 Response.Write(@"<script>alert('数据无效！');</script>");
-                Response.Write(ex.Message.ToString());
+                //Response.Write(ex.Message.ToString());
             }
             lblApart3.Visible = false;
             txtApart3.Visible = false;
