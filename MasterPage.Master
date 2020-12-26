@@ -12,7 +12,7 @@
         <link href="res/js/mastertask/table.css" rel="stylesheet">
         <!-- favicon
         ============================================ -->
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="http://demo2.cssmoban.com/cssthemes6/cob_7_nalika/img/favicon.ico"> -->
+    
     <!-- Google Fonts
         ============================================ -->
     <link href="res/js/mastertask/css" rel="stylesheet">
@@ -93,7 +93,7 @@
                             <ul class="submenu-angle collapse in" aria-expanded="true">
                                 <li runat="server" id="维修申请" visible="false"><a title="Dashboard v.2" href="RepairApplication.aspx"><span class="mini-sub-pro">杨：维修申请</span></a></li>
                                 <li runat="server" id="维修申请管理" visible="false"><a title="Dashboard v.2" href="RepairApplicationManagement.aspx"><span class="mini-sub-pro">杨：维修申请管理</span></a></li>
-                                <li runat="server" id="维修记录查看" visible="false"><a title="Dashboard v.2" href="#"><span class="mini-sub-pro">杨：维修记录查看</span></a></li>
+                                <li runat="server" id="维修记录查看" visible="false"><a title="Dashboard v.2" href="RepairRecord.aspx"><span class="mini-sub-pro">杨：维修记录查看</span></a></li>
                                 <li runat="server" id="身份管理" visible="false"><a title="Dashboard v.2" href="RoleManagement.aspx"><span class="mini-sub-pro">杨：身份管理</span></a></li>
                                 <li runat="server" id="权限管理" visible="false"><a title="Dashboard v.2" href="AuthorityManagement.aspx"><span class="mini-sub-pro">杨：权限管理</span></a></li>
                                 <li runat="server" id="公告查看" visible="false"><a title="Dashboard v.2" href="NoticeHistory.aspx"><span class="mini-sub-pro">霍：通知公告查看</span></a></li>

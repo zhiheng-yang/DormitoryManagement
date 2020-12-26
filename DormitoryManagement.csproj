@@ -245,6 +245,7 @@
     <Content Include="RoomInfo.aspx" />
     <Content Include="RoleManagement.aspx" />
     <Content Include="AuthorityManagement.aspx" />
+    <Content Include="RepairRecord.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.aspx.cs">
@@ -387,6 +388,13 @@
     </Compile>
     <Compile Include="AuthorityManagement.aspx.designer.cs">
       <DependentUpon>AuthorityManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepairRecord.aspx.cs">
+      <DependentUpon>RepairRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepairRecord.aspx.designer.cs">
+      <DependentUpon>RepairRecord.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
