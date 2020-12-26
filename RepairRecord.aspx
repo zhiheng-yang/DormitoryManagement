@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div class="mainbox">
         <div class="responsive">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns ="False" AllowPaging="True">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns ="False" AllowPaging="True" OnRowCommand="GridView1_RowCommand">
                 <Columns>
                     <asp:BoundField HeaderText="编号" SortExpression="id" DataField="id" HeaderStyle-BackColor="Blue" >
 <HeaderStyle BackColor="Blue"></HeaderStyle>
@@ -22,6 +22,9 @@
                     <asp:BoundField HeaderText="批准状态" DataField="isCompleted" HeaderStyle-BackColor="#3399FF"  >
 <HeaderStyle BackColor="#3399FF"></HeaderStyle>
                     </asp:BoundField>
+                        <asp:ButtonField ButtonType="Button" CommandName="grant" HeaderText="操作" Text="维修完成" HeaderStyle-BackColor="Black" Visible="True">
+<HeaderStyle BackColor="Black"></HeaderStyle>
+                    </asp:ButtonField>
                 </Columns>
             </asp:GridView>
             </div>
