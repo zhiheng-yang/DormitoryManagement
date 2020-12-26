@@ -98,7 +98,6 @@ namespace DormitoryManagement
                 return;
             }
             //记得删
-            Session.Contents["id"] = "1";
             String sql = "insert into health_record(user_id,time,health_zao1,health_zao2,health_zhong1,health_zhong2,health_wan1,health_wan2" +
                 ") values (";
             sql += Session.Contents["id"] + ",";

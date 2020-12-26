@@ -217,11 +217,13 @@ namespace DormitoryManagement
                     System.Diagnostics.Debug.Write("数据库影响行数，健康记录添加：" + result + "\n");
 
                     //获得现在住的宿舍的人数
+                    r_id = getRoomId(UserView.Rows[index].Cells[7].Text);
                     strSql = "Select num_peo from room where id = " + r_id + "";
                     System.Diagnostics.Debug.Write("66666666666666666666:" + strSql + "\n");
                     da = new MySqlDataAdapter(strSql, conn);
                     DataSet ds = new DataSet();
                     da.Fill(ds);
+                    System.Diagnostics.Debug.Write("777777777777777777777777:" + Convert.ToInt32(ds.Tables[0].Rows[0][0]) + "\n");
                     int num_peo1 = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
                     num_peo1--;
 
@@ -234,12 +236,14 @@ namespace DormitoryManagement
                     System.Diagnostics.Debug.Write("11111111111改原来的宿舍人数行数：" + result + "\n");
 
                     conn.Close();
+                    System.Diagnostics.Debug.Write("9999999999999999999999999999已经跳转过了：" + result + "\n");
                     Response.Redirect("UserManagement.aspx");
                 }
                 catch (MySqlException ex)
                 {
                     Response.Write(@"<script>alert('不能删除该用户！');</script>");
                     Response.Write(ex.Message.ToString());
+                    Response.Redirect("UserManagement.aspx");
                 }
             }
             if (e.CommandName == "upd")
@@ -349,13 +353,14 @@ namespace DormitoryManagement
                 MySqlConnection conn = new MySqlConnection(strConnection);
                 conn.Open();
                 //获得现在住的宿舍的人数
-                strSql = "Select max,num_peo from room where id = " + r_id + "";
+                strSql = "Select num_peo from room where id = " + r_id + "";
                 //  System.Diagnostics.Debug.Write("获取宿舍人数的sql语句:" + strSql + "\n");
                 da = new MySqlDataAdapter(strSql, conn);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
-                int num_peo1 = Convert.ToInt32(ds.Tables[0].Rows[0][1]);
-                num_peo1--;
+                //原宿舍人数
+                int num_peo1 = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
+                num_peo1 = num_peo1 - 1;
 
                 //获得要搬去宿舍的人数，空余人数
                 strSql = "Select max,num_peo from room where id = " + getRoomId(room2.SelectedValue) + "";
@@ -387,28 +392,31 @@ namespace DormitoryManagement
                 ds = new DataSet();
                 da.Fill(ds);
                 int user_id = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
+                if (getRoomId(room2.SelectedValue) != r_id)
+                {
+                    //改住宿表;
+                    sql = "update room_user set room_id = " + getRoomId(room2.SelectedValue) + " where user_id = " + user_id;
+                    System.Diagnostics.Debug.Write("修改住宿表的sql语句:" + sql);
+                    da1 = new MySqlCommand(sql, conn);
+                    result = da1.ExecuteNonQuery();
+                    System.Diagnostics.Debug.Write("修改住宿数据库影响行数：" + result + "\n");
 
-                //改住宿表;
-                sql = "update room_user set room_id = " + getRoomId(room2.SelectedValue) + " where user_id = " + user_id;
-                System.Diagnostics.Debug.Write("修改住宿表的sql语句:" + sql);
-                da1 = new MySqlCommand(sql, conn);
-                result = da1.ExecuteNonQuery();
-                System.Diagnostics.Debug.Write("修改住宿数据库影响行数：" + result + "\n");
+                    //改原来的宿舍人数
+                    sql = "update room set num_peo = " + num_peo1 + " where id = " + r_id;
+                    System.Diagnostics.Debug.Write("111111111111111:" + sql + "\n");
+                    da1 = new MySqlCommand(sql, conn);
+                    result = da1.ExecuteNonQuery();
+                    System.Diagnostics.Debug.Write("11111111111改原来的宿舍人数行数：" + result + "\n");
 
-                //改原来的宿舍人数
-                sql = "update room set num_peo = " + num_peo1 + " where id = " + r_id;
-                System.Diagnostics.Debug.Write("111111111111111:" + sql + "\n");
-                da1 = new MySqlCommand(sql, conn);
-                result = da1.ExecuteNonQuery();
-                System.Diagnostics.Debug.Write("11111111111改原来的宿舍人数行数：" + result + "\n");
+                    //改新的宿舍人数
+                    num_peo2 = num_peo2 + 1;
+                    sql = "update room set num_peo = " + num_peo2 + " where id = " + getRoomId(room2.SelectedValue);
+                    System.Diagnostics.Debug.Write("2222222222222222222222:" + sql + "\n");
+                    da1 = new MySqlCommand(sql, conn);
+                    result = da1.ExecuteNonQuery();
+                    System.Diagnostics.Debug.Write("2222222222222222222222增加住宿人数行数，健康记录添加：" + result + "\n");
+                }
 
-                //改新的宿舍人数
-                num_peo2 = num_peo2 + 1;
-                sql = "update room set num_peo = " + num_peo2 + " where id = " + getRoomId(room2.SelectedValue);
-                System.Diagnostics.Debug.Write("2222222222222222222222:" + sql + "\n");
-                da1 = new MySqlCommand(sql, conn);
-                result = da1.ExecuteNonQuery();
-                System.Diagnostics.Debug.Write("2222222222222222222222增加住宿人数行数，健康记录添加：" + result + "\n");
 
                 conn.Close();
                 Response.Write(@"<script>alert('修改用户信息成功');</script>");
@@ -445,6 +453,11 @@ namespace DormitoryManagement
             btnUpdate.Visible = false;
             String sql = "";
             String strSql = "";
+            if (name2.Text.Equals("") || no2.Text.Equals("") || IDCard2.Text.Equals("") || contact2.Text.Equals(""))
+            {
+                Response.Write(@"<script>alert('请填写将信息填写完整');</script>");
+                return;
+            }
             try
             {
                 String strConnection = "server=49.234.112.12;port=3306;user=root;password=122316;database=gongyu;Charset=utf8;Allow Zero Datetime=True;";
@@ -462,6 +475,7 @@ namespace DormitoryManagement
                 {
                     conn.Close();
                     Response.Write(@"<script>alert('该宿舍人数已经满了，不能入住');</script>");
+
                     return;
                 }
 
@@ -502,6 +516,7 @@ namespace DormitoryManagement
                 //增加成功
                 conn.Close();
                 Response.Write(@"<script>alert('增加用户成功');</script>");
+                System.Diagnostics.Debug.Write("增加完以后，跳转了回去了9999999999999999999999999" + sql);
                 Response.Redirect("UserManagement.aspx");
             }
             catch
@@ -578,7 +593,7 @@ namespace DormitoryManagement
             btnBack.Visible = false;
             btnUpdate.Visible = false;
             btnAdd.Visible = true;
-
+            Response.Redirect("UserManagement.aspx");
         }
     }
 }
