@@ -22,7 +22,7 @@ namespace DormitoryManagement.front
             {
                 getMenus();
             }
-            NAME.Text = "退出： " + Session.Contents["name"].ToString();
+            NAME.Text = "退出： " + Session.Contents["name"];
 
         }
 
