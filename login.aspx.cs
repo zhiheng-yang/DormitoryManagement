@@ -22,10 +22,10 @@ namespace DormitoryManagement
         protected void Button1_Click(object sender, EventArgs e) {
 
             // QuickLogin是可以直接点击登录，默认登录zach用户，密码123456，测试时使用
-            //QuickLogin();
+            QuickLogin();
 
             // 正确的登录界面，正式使用时用这个
-             Login();
+            // Login();
 
         }
 

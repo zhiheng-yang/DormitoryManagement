@@ -14,6 +14,7 @@ namespace DormitoryManagement.front
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            NAME.Text = Session.Contents["name"].ToString();
             if (Session.Contents["role_id"] == null)
             {
                 Response.Redirect("login.aspx");

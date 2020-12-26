@@ -79,7 +79,7 @@
             <div class="nalika-profile">
                 <div class="profile-dtl">
                     <a href="#"><img src="res/js/mastertask/4.jpg" alt=""></a>
-                    <h2>杨 <span class="min-dtn">志恒</span></h2>
+                    <b><asp:Label ID="NAME" runat="server" CssClass="btn">杨志恒</asp:Label></b>
                 </div>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar mCustomScrollbar _mCS_1 mCS-autoHide" style="position: relative; overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-light-1 mCSB_vertical mCSB_outside" tabindex="0" style="max-height: none;"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
@@ -182,7 +182,7 @@
                                         <div class="header-top-menu tabl-d-n hd-search-rp">
                                             <div class="breadcome-heading">
                                                 <form role="search" class="">
-                                                    <input type="text" placeholder="Search..." class="form-control">
+                                                    <input type="text" placeholder="杨志恒" class="form-control">
                                                     <a href=""><i class="fa fa-search"></i></a>
                                                 </form>
                                             </div>
@@ -253,7 +253,7 @@
     </script>
 
 
-    <script src="res/js/mastertask/main.js"></script><a id="scrollUp" href="http://demo2.cssmoban.com/cssthemes6/cob_7_nalika/index-2.html#top" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+    <script src="res/js/mastertask/main.js"></script><a id="scrollUp" href="#" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
 
 
 </body>
